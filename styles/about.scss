@@ -1,0 +1,221 @@
+@import 'colors';
+@import 'typography';
+@import 'spacings';
+@import 'base';
+@import'menu';
+@import 'footer2';
+
+.aboutTitle{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/man-running-mobile\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+    position: relative;
+    background-size:cover;
+
+    h1{
+      position:absolute;
+      top:10%;
+      text-align:center;
+      
+        
+    }
+    .button{
+        position:absolute;
+        bottom: 10%;
+        left:34%;
+        right:34%;
+        height:auto;
+        width:auto;
+        border: 1px solid $black;
+        padding:5px 5px;
+        background-color:$black;
+        text-transform: uppercase;
+        text-align:center;
+        color:$white;
+        font-weight: bold;
+        &:hover{
+            background-color: $white;
+            color:$black;
+        }
+    }
+}
+ .our-mission{
+    position: relative;
+    height: fit-content;
+    padding: $spacing-base $spacing-medium;
+    text-align: center;
+    margin:$spacing-base auto;
+    letter-spacing: .5px;
+    font-weight: bold;
+    
+    
+}
+  h2{
+      text-align:center;
+      margin:$spacing-medium auto;
+ }
+ .forEveryLifeStyle{
+     display:grid;
+     grid-template-columns: repeat(2,1fr);
+     gap:1rem;
+     margin:0 $spacing-medium;
+    
+
+     article {
+        width:100%;
+        height:200px;
+        padding:$spacing-medium;
+        background-position:center;
+        background-size: cover;
+        margin:0 auto;
+        &:nth-child(1){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/man-lifting-mobile.jpg");
+        }
+        &:nth-child(2){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/beach-mobile.jpg");
+        }
+        &:nth-child(3){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/bike-mobile.jpg");
+        }
+        &:nth-child(4){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/climbing-mobile.jpg");
+        }
+        &:nth-child(5){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/surf-mobile\ \(4\).jpg");
+        }
+        &:nth-child(6){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/meditation-mobile.jpg");
+        }
+        &:nth-child(7){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/man-swimming-mobile.jpg");
+        }
+        &:nth-child(8){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/yoga-mobile.jpg");
+        }
+        &:nth-child(9){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/balerina-mobile.jpg");
+        }
+        &:nth-child(10){
+            background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/mom-and-child-mobile.jpg");
+        }
+     }
+
+ }
+
+ 
+
+ .quality{
+     margin: $spacing-xl $spacing-medium;
+     h3{
+         text-align:center;
+         margin: $spacing-lg auto;  
+         font-size: 2rem;   
+     }
+     .qualityFlex{
+        display:flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        gap:15px;
+        p{
+            font-weight:bold;
+            font-size: 1.2rem;
+        }
+        .qualityImage{
+            background-image:url("../images/aboutimg/mushroom-mobile\ \(1\).jpg") ;
+            width:100%;
+            height:300px;
+            padding:$spacing-medium;
+            background-position:center;
+            background-size: cover;
+        }
+    }  
+ }
+
+     h4{
+        text-align:center;
+        margin: $spacing-xl auto;  
+        font-size: 2rem;   
+}
+ .tasteBuds {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;  
+   margin: $spacing-xl $spacing-medium;
+   p{
+       margin:$spacing-base;
+       font-weight: bold;
+   }
+   .tasteBudsImg {
+       background-image: url("../images/aboutimg/tasteBuds.jpg");
+       width:100%;
+       height:300px;
+       background-size: cover;
+       background-position: center;
+       padding: $spacing-base;
+   }
+ }
+
+ @media screen and (min-width: 630px) {
+    .aboutTitle{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url("../images/aboutimg/man-running-desktop.jpg");
+        height:750px;
+    }
+    .aboutTitle h1{
+        top:50%;
+        margin:0 $spacing-medium $spacing-medium $spacing-medium;
+        left:0%;
+        right:0%;
+    }
+     .forEveryLifeStyle {
+         grid-template-columns: repeat(3, 1fr);
+         article:nth-child(10) {
+             display:none;
+         }
+        }
+    .quality{
+        .qualityFlex {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            p{
+                width:50%;
+            }
+            .qualityImage{
+                width:50%;
+                background-image: url("../images/aboutimg/mushroom-desktop.jpg");
+            }
+        }      
+    }
+
+    .tasteBuds {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        p{
+            width:50%;
+        }
+        .tasteBudsImg {
+            width:50%;
+        }
+    }
+
+ }
+  @media screen and (min-width: 900px) {
+ .our-mission{
+    width:50%;
+ }
+ .forEveryLifeStyle {
+    grid-template-columns: repeat(4, 1fr);
+    article:nth-child(9) {
+        display:none;
+    }
+   }
+ }
+
+ @media screen and (min-width: 1200px) {
+    .forEveryLifeStyle {
+        grid-template-columns: repeat(5, 1fr);
+        article:nth-child(9), article:nth-child(10) {
+            display:block;
+        }
+       } 
+ }

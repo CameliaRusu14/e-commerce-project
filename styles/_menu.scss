@@ -1,0 +1,88 @@
+@import 'colors';
+@import 'typography';
+@import 'spacings';
+@import 'base';
+
+.container {
+    padding: 0 $container-spacing;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$blue;
+    
+ .smallMenu{
+    display:flex;
+    justify-content: space-betweens;
+    flex-direction: row;
+    gap:5px;
+    margin-right:$spacing-base;
+
+    .fa-bars {
+        font-size: 10px;
+        
+    }
+    .fa-cart-shopping{
+        font-size:$spacing-base;
+    }
+    .fa-user{
+     font-size: $spacing-base;
+    }
+    input[type="search"]{
+        display: none;
+    }
+
+}
+
+   .logoindex {
+    text-transform: capitalize;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color:$white;
+    letter-spacing: 3px;
+    padding: 0 30px;
+ }
+
+  nav {
+    display: none;   
+ }
+
+}   
+
+@media screen and (min-width: 665px)  {
+     header{
+         .hamburgerMenu{
+            display: none;
+          }
+          input[type="search"]{
+            display: none;
+         }
+            nav {
+            display:block;
+            color: $white;
+            }
+    
+            ul {
+            list-style: none;
+            display:flex;
+            align-items: center;
+            gap: 30px;
+            }
+        }    
+
+}
+@media screen and (min-width: 900px){
+    .container {
+         width: 932px;
+         margin: 0 auto;
+         padding:0;
+     }
+    }
+ @media screen and (min-width: 1200px) {
+        .container{
+            width:1140px;
+        }
+    }

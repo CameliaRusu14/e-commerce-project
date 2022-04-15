@@ -1,0 +1,749 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, li, a, button {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, li, a, button {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #12343a;
+}
+
+header .smallMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-betweens;
+      -ms-flex-pack: space-betweens;
+          justify-content: space-betweens;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  margin-right: 15px;
+}
+
+header .smallMenu .fa-bars {
+  font-size: 10px;
+}
+
+header .smallMenu .fa-cart-shopping {
+  font-size: 15px;
+}
+
+header .smallMenu .fa-user {
+  font-size: 15px;
+}
+
+header .smallMenu input[type="search"] {
+  display: none;
+}
+
+header .logoindex {
+  text-transform: capitalize;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  padding: 0 30px;
+}
+
+header nav {
+  display: none;
+}
+
+@media screen and (min-width: 665px) {
+  header .hamburgerMenu {
+    display: none;
+  }
+  header input[type="search"] {
+    display: none;
+  }
+  header nav {
+    display: block;
+    color: white;
+  }
+  header ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 932px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, li, a, button {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p, li, a, button {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #12343a;
+}
+
+header .smallMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-betweens;
+      -ms-flex-pack: space-betweens;
+          justify-content: space-betweens;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5px;
+  margin-right: 15px;
+}
+
+header .smallMenu .fa-bars {
+  font-size: 10px;
+}
+
+header .smallMenu .fa-cart-shopping {
+  font-size: 15px;
+}
+
+header .smallMenu .fa-user {
+  font-size: 15px;
+}
+
+header .smallMenu input[type="search"] {
+  display: none;
+}
+
+header .logoindex {
+  text-transform: capitalize;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  padding: 0 30px;
+}
+
+header nav {
+  display: none;
+}
+
+@media screen and (min-width: 665px) {
+  header .hamburgerMenu {
+    display: none;
+  }
+  header input[type="search"] {
+    display: none;
+  }
+  header nav {
+    display: block;
+    color: white;
+  }
+  header ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 932px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+.container {
+  padding: 0 30px;
+}
+
+footer {
+  background-color: #12343a;
+  margin-top: 15px;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 30px;
+}
+
+footer .logo {
+  width: 100px;
+}
+
+footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  padding-bottom: 30px;
+}
+
+footer .social-icons img {
+  width: 50px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0px;
+  color: white;
+  margin: 30px 0;
+}
+
+footer ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 665px) {
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .container > * {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  footer .container > a {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  footer .container .social-icons {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer .container nav {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  footer .container nav ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  footer .container nav ul li {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 932px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+.aboutTitle {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/man-running-mobile (2).jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/man-running-mobile (2).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+
+.aboutTitle h1 {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+}
+
+.aboutTitle .button {
+  position: absolute;
+  bottom: 10%;
+  left: 34%;
+  right: 34%;
+  height: auto;
+  width: auto;
+  border: 1px solid black;
+  padding: 5px 5px;
+  background-color: black;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.aboutTitle .button:hover {
+  background-color: white;
+  color: black;
+}
+
+.our-mission {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 15px auto;
+  letter-spacing: .5px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.forEveryLifeStyle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0 30px;
+}
+
+.forEveryLifeStyle article {
+  width: 100%;
+  height: 200px;
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.forEveryLifeStyle article:nth-child(1) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/man-lifting-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/man-lifting-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(2) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/beach-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/beach-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(3) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/bike-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/bike-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(4) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/climbing-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/climbing-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(5) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/surf-mobile (4).jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/surf-mobile (4).jpg");
+}
+
+.forEveryLifeStyle article:nth-child(6) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/meditation-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/meditation-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(7) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/man-swimming-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/man-swimming-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(8) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/yoga-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/yoga-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(9) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/balerina-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/balerina-mobile.jpg");
+}
+
+.forEveryLifeStyle article:nth-child(10) {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/mom-and-child-mobile.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/mom-and-child-mobile.jpg");
+}
+
+.quality {
+  margin: 60px 30px;
+}
+
+.quality h3 {
+  text-align: center;
+  margin: 45px auto;
+  font-size: 2rem;
+}
+
+.quality .qualityFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+.quality .qualityFlex p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.quality .qualityFlex .qualityImage {
+  background-image: url("../images/aboutimg/mushroom-mobile (1).jpg");
+  width: 100%;
+  height: 300px;
+  padding: 30px;
+  background-position: center;
+  background-size: cover;
+}
+
+h4 {
+  text-align: center;
+  margin: 60px auto;
+  font-size: 2rem;
+}
+
+.tasteBuds {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 30px;
+}
+
+.tasteBuds p {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.tasteBuds .tasteBudsImg {
+  background-image: url("../images/aboutimg/tasteBuds.jpg");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+}
+
+@media screen and (min-width: 630px) {
+  .aboutTitle {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/aboutimg/man-running-desktop.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url("../images/aboutimg/man-running-desktop.jpg");
+    height: 750px;
+  }
+  .aboutTitle h1 {
+    top: 50%;
+    margin: 0 30px 30px 30px;
+    left: 0%;
+    right: 0%;
+  }
+  .forEveryLifeStyle {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .forEveryLifeStyle article:nth-child(10) {
+    display: none;
+  }
+  .quality .qualityFlex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .quality .qualityFlex p {
+    width: 50%;
+  }
+  .quality .qualityFlex .qualityImage {
+    width: 50%;
+    background-image: url("../images/aboutimg/mushroom-desktop.jpg");
+  }
+  .tasteBuds {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .tasteBuds p {
+    width: 50%;
+  }
+  .tasteBuds .tasteBudsImg {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .our-mission {
+    width: 50%;
+  }
+  .forEveryLifeStyle {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .forEveryLifeStyle article:nth-child(9) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .forEveryLifeStyle {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .forEveryLifeStyle article:nth-child(9), .forEveryLifeStyle article:nth-child(10) {
+    display: block;
+  }
+}
+/*# sourceMappingURL=about.css.map */
