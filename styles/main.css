@@ -622,6 +622,67 @@ footer ul li:not(:last-child) {
   background-repeat: no-repeat;
 }
 
+.container2 .carousel-container {
+  width: 270px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.container2 .carousel-container .produse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 0;
+  -webkit-transition: left 1s;
+  transition: left 1s;
+}
+
+.container2 .carousel-container .produse > article {
+  border: 1px solid lightgray;
+  min-width: 250px;
+  margin: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container2 .carousel-container .produse > article img {
+  width: 100%;
+}
+
+.container2 .carousel-container .produse > article div {
+  padding: 20px;
+}
+
+.container2 .carousel-container .produse > article a {
+  color: black;
+}
+
+.container2 .carousel-container .errors div {
+  border: 5px solid red;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  color: red;
+}
+
+.container2 .buttons {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container2 .buttons #prev_button {
+  margin: 0 20px;
+}
+
 @media screen and (min-width: 665px) {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/hero-desktop.jpg");
@@ -660,6 +721,12 @@ footer ul li:not(:last-child) {
   }
 }
 
+@media screen and (min-width: 650px) {
+  .container2 .carousel-container {
+    width: 540px;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .container {
     width: 932px;
@@ -670,11 +737,20 @@ footer ul li:not(:last-child) {
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
   }
+  .container2 {
+    width: 900px;
+  }
+  .container2 .carousel-container {
+    width: 810px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+  .container2 .carousel-container {
+    width: 1080px;
   }
 }
 /*# sourceMappingURL=main.css.map */
