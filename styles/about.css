@@ -30,8 +30,13 @@ a {
   color: white;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -72,8 +77,13 @@ a {
   color: white;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -94,44 +104,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #12343a;
-}
-
-header .smallMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-betweens;
-      -ms-flex-pack: space-betweens;
-          justify-content: space-betweens;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 5px;
-  margin-right: 15px;
-}
-
-header .smallMenu .fa-bars {
-  font-size: 10px;
-}
-
-header .smallMenu .fa-cart-shopping {
-  font-size: 15px;
-}
-
-header .smallMenu .fa-user {
-  font-size: 15px;
-}
-
-header .smallMenu input[type="search"] {
-  display: none;
+  min-height: 8vh;
+  position: relative;
+  z-index: 1;
 }
 
 header .logoindex {
@@ -144,44 +125,119 @@ header .logoindex {
   padding: 0 30px;
 }
 
-header nav {
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: bold;
+  gap: 10px;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1.2rem;
+}
+
+.nav-links a:last-child {
   display: none;
 }
 
-@media screen and (min-width: 665px) {
-  header .hamburgerMenu {
-    display: none;
-  }
-  header input[type="search"] {
-    display: none;
-  }
-  header nav {
+.nav-links a:hover {
+  color: aqua;
+}
+
+.small-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-betweens;
+      -ms-flex-pack: space-betweens;
+          justify-content: space-betweens;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.small-menu .burger-menu {
+  color: white;
+  display: none;
+}
+
+.small-menu .user, .small-menu .cart, .small-menu .burger-menu {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .small-menu .burger-menu {
     display: block;
-    color: white;
   }
-  header ul {
-    list-style: none;
+  .small-menu .user {
+    display: none;
+  }
+  .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    top: 6vh;
+    right: 0%;
+    background: #12343a;
+    height: 70vh;
+    width: 80%;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
   }
-}
-
-@media screen and (min-width: 900px) {
-  .container {
-    width: 932px;
-    margin: 0 auto;
-    padding: 0;
+  .nav-links li {
+    opacity: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
+  .nav-links a:last-child {
+    display: block;
+  }
+  .nav-links.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  }
+  @-webkit-keyframes navFadeLinks {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navFadeLinks {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
   }
 }
 
@@ -213,8 +269,13 @@ a {
   color: white;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -255,8 +316,13 @@ a {
   color: white;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -277,44 +343,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   background-color: #12343a;
-}
-
-header .smallMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-betweens;
-      -ms-flex-pack: space-betweens;
-          justify-content: space-betweens;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 5px;
-  margin-right: 15px;
-}
-
-header .smallMenu .fa-bars {
-  font-size: 10px;
-}
-
-header .smallMenu .fa-cart-shopping {
-  font-size: 15px;
-}
-
-header .smallMenu .fa-user {
-  font-size: 15px;
-}
-
-header .smallMenu input[type="search"] {
-  display: none;
+  min-height: 8vh;
+  position: relative;
+  z-index: 1;
 }
 
 header .logoindex {
@@ -327,44 +364,119 @@ header .logoindex {
   padding: 0 30px;
 }
 
-header nav {
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: bold;
+  gap: 10px;
+  padding: 0;
+}
+
+.nav-links li {
+  font-size: 1.2rem;
+}
+
+.nav-links a:last-child {
   display: none;
 }
 
-@media screen and (min-width: 665px) {
-  header .hamburgerMenu {
-    display: none;
-  }
-  header input[type="search"] {
-    display: none;
-  }
-  header nav {
+.nav-links a:hover {
+  color: aqua;
+}
+
+.small-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-betweens;
+      -ms-flex-pack: space-betweens;
+          justify-content: space-betweens;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.small-menu .burger-menu {
+  color: white;
+  display: none;
+}
+
+.small-menu .user, .small-menu .cart, .small-menu .burger-menu {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .small-menu .burger-menu {
     display: block;
-    color: white;
   }
-  header ul {
-    list-style: none;
+  .small-menu .user {
+    display: none;
+  }
+  .nav-links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 30px;
+    top: 6vh;
+    right: 0%;
+    background: #12343a;
+    height: 70vh;
+    width: 80%;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
   }
-}
-
-@media screen and (min-width: 900px) {
-  .container {
-    width: 932px;
-    margin: 0 auto;
-    padding: 0;
+  .nav-links li {
+    opacity: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
+  .nav-links a:last-child {
+    display: block;
+  }
+  .nav-links.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform .5s ease-in;
+    transition: -webkit-transform .5s ease-in;
+    transition: transform .5s ease-in;
+    transition: transform .5s ease-in, -webkit-transform .5s ease-in;
+  }
+  @-webkit-keyframes navFadeLinks {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  @keyframes navFadeLinks {
+    from {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+              transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
   }
 }
 

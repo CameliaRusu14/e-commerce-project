@@ -6,83 +6,114 @@
 .container {
     padding: 0 $container-spacing;
 }
-
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color:$blue;
-    
- .smallMenu{
-    display:flex;
-    justify-content: space-betweens;
-    flex-direction: row;
-    gap:5px;
-    margin-right:$spacing-base;
+    min-height:8vh;
+    position:relative;
+    z-index:1;
 
-    .fa-bars {
-        font-size: 10px;
+    .logoindex {
+            text-transform: capitalize;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            text-decoration: none;
+            color:$white;
+            letter-spacing: 3px;
+            padding: 0 30px;
+    }
+}     
+
+    .nav-links {
+        display:flex;
+        list-style: none;
+        justify-content: space-around;
+        font-weight:bold;
+        gap:10px;
+        padding:0;
+        li{
+            font-size:1.2rem;
+        }
+    
+        & a:last-child{
+            display:none;
+    
+        }
+        & a:hover{
+            color:aqua;
+
+        }
+
+
+    }
+    .small-menu{
+        display:flex;
+        justify-content: space-betweens;
+        flex-direction: row;
+        gap:10px;
+        margin-right:$spacing-base;
+
+        .burger-menu {
+        color:$white;
+        display:none;
         
-    }
-    .fa-cart-shopping{
-        font-size:$spacing-base;
-    }
-    .fa-user{
-     font-size: $spacing-base;
-    }
-    input[type="search"]{
-        display: none;
-    }
 
-}
-
-   .logoindex {
-    text-transform: capitalize;
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    text-decoration: none;
-    color:$white;
-    letter-spacing: 3px;
-    padding: 0 30px;
- }
-
-  nav {
-    display: none;   
- }
-
-}   
-
-@media screen and (min-width: 665px)  {
-     header{
-         .hamburgerMenu{
-            display: none;
-          }
-          input[type="search"]{
-            display: none;
-         }
-            nav {
-            display:block;
-            color: $white;
-            }
-    
-            ul {
-            list-style: none;
-            display:flex;
-            align-items: center;
-            gap: 30px;
-            }
-        }    
-
-}
-@media screen and (min-width: 900px){
-    .container {
-         width: 932px;
-         margin: 0 auto;
-         padding:0;
+     }
+     .user, .cart, .burger-menu {
+         font-size:25px;
+         cursor: pointer;
      }
     }
- @media screen and (min-width: 1200px) {
-        .container{
-            width:1140px;
+
+
+@media screen and (max-width:900px) {
+    .small-menu {
+        .burger-menu{
+            display:block;
+        }
+
+        .user {
+            display:none;
         }
     }
+
+    .nav-links{
+        display:flex;
+        flex-direction: column;
+        position:absolute;
+        align-items:center;
+        top:6vh;
+        right:0%;
+        background:$blue;
+        height:70vh;
+        width:80%;
+        transform:translateX(120%);
+       
+         li{
+           opacity: 0;
+        }
+        
+        & a:last-child{
+            display:block;
+    
+        }
+        
+    }
+    .nav-links.active {
+        transform: translateX(0);
+        transition: transform .5s ease-in;
+    }
+
+    @keyframes navFadeLinks {
+        from {
+            opacity:0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity:1;
+            transform: translateX(0px);
+        }
+    }
+}

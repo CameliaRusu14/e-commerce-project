@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/about.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ea5e4c682.js" crossorigin="anonymous"></script>
+    <script src="./styles/menu.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header>
         <a href="index.html" class="logoindex"> Protein & Nutrition</a>
         <nav>
-         <ul>
+         <ul class="nav-links">
             <a href="index.html">  <li>Home</li></a>
             <a href="products.html"><li>Products</li></a>
-            <a href="about.html"><li>Abouts us</li></a>     
+            <a href="about.html"><li>Abouts us</li></a>
+            <a href="login.html"><li>Login</li></a>     
          </ul>
          </nav>
-         <div class="smallMenu">
-            <input type="search" placeholder="Type to search">
-            <i class="fa-solid fa-magnifying-glass-search"></i>
-            <button class="hamburgerMenu"><i class="fa-solid fa-bars"></i></button> 
-            <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="signUp.html"><i class="fa-solid fa-user"></i></a>
-            
+         <div class="small-menu">
+         <div class="burger-menu" id="burger-menu">
+            <!-- <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>   -->
+            <i class="fa fa-bars"></i>
          </div>
-         
+         <a href="cart.html" class="cart" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+         <a href="signUp.html" class="user" id="user"><i class="fa-solid fa-user"></i></a>
+        </div>
+
      </header>
      <section>
          <div class="aboutTitle">
