@@ -7,32 +7,52 @@
     <link href="styles/products.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2ea5e4c682.js" crossorigin="anonymous"></script>
     <script src="./styles/menu.js" defer></script>
+    <script src="./styles/products.js" defer></script>
     <title>Proteins&Nutrition</title>
     <title>Proteins&Nutrition - Products</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logoindex"> Proteins & Nutrition</a>
-        <nav>
-         <ul class="nav-links">
-            <a href="index.html">  <li>Home</li></a>
-            <a href="products.html"><li>Products</li></a>
-            <a href="about.html"><li>Abouts us</li></a>
-            <a href="login.html"><li>Login</li></a>     
-         </ul>
-         </nav>
-         <div class="small-menu">
-         <div class="burger-menu" id="burger-menu">
-            <!-- <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>   -->
-            <i class="fa fa-bars"></i>
-         </div>
-         <a href="cart.html" class="cart" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
-         <a href="signUp.html" class="user" id="user"><i class="fa-solid fa-user"></i></a>
-        </div>
+   
+        <header>
+            <a href="index.html" class="logoindex"> Proteins & Nutrition</a>
+            <nav>
+             <ul class="nav-links">
+                <a href="index.html">  <li>Home</li></a>
+                <a href="products.html"><li>Products</li></a>
+                <a href="about.html"><li>Abouts us</li></a>
+                <a href="login.html"><li>Login</li></a>     
+             </ul>
+             </nav>
+             <div class="small-menu">
+             <div class="burger-menu" id="burger-menu">
+                <!-- <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>   -->
+                <i class="fa fa-bars"></i>
+             </div>
+             <a href="cart.html" class="cart" id="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+             <a href="signUp.html" class="user" id="user"><i class="fa-solid fa-user"></i></a>
+            </div>
 
-     </header>
+         </header>
+         <h1>All Products</h1>
+
+         <div id="app">
+           <div class="container"><section id="filters" class="filters">
+            <label for="filter_products">Filter</label>
+            <input type="text" id="filter_products" />
+            <label for="sorting">Sorting by price:</label>
+            <select name="sort" id="sorting">
+          <option value="none"> None </option>
+          <option value="high">Low-to-High</option>
+          <option value="low">High-to-Low</option>
+         </select>
+          </section></div>
+         
+         <div class="container"><section class="produse" id="produse">
+        </section></div>
+         
+      </div>
 
 
 
