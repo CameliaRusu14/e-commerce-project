@@ -74,13 +74,15 @@
     }
 
      
-    // @keyframes swipephoto {
-    //     to {
-    //       transform: translateX(0%);
-    //       transition: transform .6s
-    //     }
+    @keyframes swipePhoto {
+        from {transform: translateX(-150%);
+        }
+        to {
+          transform: translateX(0%);
+         
+        }
     
-    // }
+    }
 }
     .swipeImg {
         width: 400px;
@@ -89,13 +91,9 @@
         background-image: url("../images/swipeInfoimg.webp");
         background-size:cover;
         background-repeat: no-repeat;
-        // transform: translateX(-100%);
-        // animation-name: swipephoto;
-        // animation-duration: 2s;
-        // animation-iteration-count:infinite;
-        // animation-delay: 0.8s;
-        
-        
+        transition: transform 1s ease-in;  
+        animation: swipePhoto 1s ease-in;
+
     }
 
 }
@@ -145,6 +143,7 @@
          
 }
 .container2 {
+    margin: 0 auto;
 .carousel-container{
     width: 270px;
     overflow:hidden;
@@ -261,9 +260,16 @@
           width: 50%;
           height:630px;
         }
-        // .swipeImg {
-        //     transform: translateX(100%);
-        // }
+    
+        @keyframes swipePhoto {
+            from {transform: translateX(150%);
+            }
+            to {
+              transform: translateX(0%);
+             
+            }
+        
+        }
     }
 
     // footer .container {
@@ -331,9 +337,10 @@
         width:1140px;
     }
 
-   .container2{
+    .container2{
+        width:1080px;
         .carousel-container {
         width: 1080px;
       }
-    }
+    }  
 }

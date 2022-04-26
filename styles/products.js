@@ -194,10 +194,10 @@ const produse = [
           {
             id: "22",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/71+oi4Mmo0L._AC_SY300_SX300_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71ZubssCLdL._AC_SX569_.jpg",
+            name: " Vega Protein Made Simple, Vanilla -250g",
+            price: "$25",
             description:""
           }, 
           {
@@ -221,64 +221,145 @@ const produse = [
           {
             id: "25",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/71Ke8X8dCRL._AC_SL1500_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/817dvssZWEL._AC_SL1500_.jpg",
+            name: "Optimum Nutrition Gold Standard 100% Organic Plant Based Protein, Vanilla - 650g",
+            price: "$30",
             description:""
           }, 
           {
             id: "26",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://images-na.ssl-images-amazon.com/images/I/718-Ra08m8L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71Its1txXML._AC_SY606_.jpg",
+            name: " NOW Sports Nutrition, Pea Protein 24 g,Unflavored Powder 3kg",
+            price: "$60",
             description:""
           }, 
           {
             id: "27",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/71OZatPfWtL._AC_SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81uznLqpFQL._AC_SX569_.jpg",
+            name: "Natreve Vegan Protein Powder - 25g Plant Based Protein Powder with Probiotics and Amino Acids -650g ",
+            price: "$40",
             description:""
           }, 
           {
             id: "28",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/814snGrnhkL._AC_SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81hzZAqAw9L._AC_SX569_.jpg",
+            name: "Evolve Plant Based Protein Powder, Double Chocolate, 20g Vegan Protein -907g ",
+            price: "$50",
             description:""
           }, 
           {
             id: "29",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/81fsCxIvYfL._SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81aVhXmNcLS._SX569_.jpg",
+            name: "Amazing Grass GLOW Vegan Collagen Support with Biotin and Plant Based Protein Powder, Vanilla Honeysuckle - 315g ",
+            price: "$30",
             description:""
           }, 
           {
             id: "30",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/71DHBI6UyPL._AC_SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81ODK+1kIcL._AC_SX569_.jpg",
+            name: "Organic Plant-Based Protein Powder by Four Sigmatic ,Unflavored Protein - 480g ",
+            price: "$40",
             description:""
           }, 
           {
             id: "31",
             avatar:
-              "",
-            avatar2:"",
-            name: " ",
-            price: "$",
+              "https://m.media-amazon.com/images/I/71hfZ3Lp3KL._AC_SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81HMmHof9dL._AC_SX569_.jpg",
+            name: " Vegan Protein Powder from Isopure, with Monk Fruit Sweetener and Amino Acids, Vanilla - 558g",
+            price: "$50",
+            description:""
+          },
+          {
+            id: "32",
+            avatar:
+              "https://m.media-amazon.com/images/I/71GE0RWBJuL._AC_SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/91Jo3Z5Op8L._AC_SX569_.jpg",
+            name: "Vegan Protein Powder Unflavored from Isopure, Gluten Free, Keto, Sugar Free, Plant Based, Organic, Pea Protein, Dairy Free - 520g ",
+            price: "$45",
+            description:""
+          },
+          {
+            id: "33",
+            avatar:
+              "https://m.media-amazon.com/images/I/71mdmpoTpjS._SX679_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71O2VA6qElL._SX679_.jpg",
+            name: "Amazing Grass Vegan Protein & Kale Powder: 20g of Organic Protein + 1 Cup Leafy Greens per Serving, Vanilla - 495g ",
+            price: "$40",
+            description:""
+          },
+          {
+            id: "34",
+            avatar:
+              "https://m.media-amazon.com/images/I/61d2DeBxaXL._AC_SY606_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/51Es-j0F5cL._AC_.jpg",
+            name: "MRM Nutrition Veggie Elite Performance Protein | Vanilla Bean Flavored - 1kg ",
+            price: "$60",
+            description:""
+          },
+          {
+            id: "35",
+            avatar:
+              "https://m.media-amazon.com/images/I/5120ZjtoYaL._AC_SX466_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71s+CqgkIEL._AC_SX569_.jpg",
+            name: "Vital Proteins Marine Collagen Peptides Powder Supplement for Skin Hair Nail Joint - 221g ",
+            price: "$30",
+            description:""
+          },
+          {
+            id: "36",
+            avatar:
+              "https://m.media-amazon.com/images/I/71xbl9HUG9L._SX679_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71rwDARO8aL._SX679_.jpg",
+            name: " Amazing Grass Protein Superfood: Vegan Protein Powder, All in One Nutrition Shake, Pure Vanilla -363g",
+            price: "$40",
+            description:""
+          },
+          {
+            id: "37",
+            avatar:
+              "https://m.media-amazon.com/images/I/71uTWQXIOuL._AC_SX466_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71uTWQXIOuL._AC_SX466_.jpg",
+            name: "Vega Hello Wellness You've Got Guts Blender Free Smoothie, Choco Cinnamon Banana - 500g ",
+            price: "$45",
+            description:""
+          },
+          {
+            id: "38",
+            avatar:
+              "https://m.media-amazon.com/images/I/71IXn3iLadL._SY606_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/81xyvZLUrZL._SX679_.jpg",
+            name: "Biochem 100% Organic Plant Protein - Vanilla Flavor - 691g ",
+            price: "$55",
+            description:""
+          },
+          {
+            id: "39",
+            avatar:
+              "https://m.media-amazon.com/images/I/61eYEkQQaJL._SL1200_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/61ddaobK0ML._SL1200_.jpg",
+            name: "Nutiva Organic Cold-Pressed Raw Hemp Seed Protein Powder, Peak Protein - 495g ",
+            price: "$40",
+            description:""
+          },
+          {
+            id: "40",
+            avatar:
+              "https://m.media-amazon.com/images/I/61EcQVrw+VL._SX569_.jpg",
+            avatar2:"https://m.media-amazon.com/images/I/71W+8-7GvqL._SX569_.jpg",
+            name: "Nutiva USDA Organic Cold-Pressed Raw Hemp Seed Plant Protein with Hi-Fiber and Essential Amino Acids Powder -1.36kg ",
+            price: "$70",
             description:""
           }
   ];

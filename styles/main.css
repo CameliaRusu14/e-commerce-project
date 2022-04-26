@@ -144,10 +144,6 @@ header .logoindex {
   display: none;
 }
 
-.nav-links a:hover {
-  color: aqua;
-}
-
 .small-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +188,7 @@ header .logoindex {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 6vh;
+    top: 5vh;
     right: 0%;
     background: #12343a;
     height: 70vh;
@@ -237,6 +233,18 @@ header .logoindex {
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-links {
+    top: 11vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    top: 11vh;
   }
 }
 
@@ -483,6 +491,28 @@ footer ul li:not(:last-child) {
   color: #12343a;
 }
 
+@-webkit-keyframes swipePhoto {
+  from {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes swipePhoto {
+  from {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .infoProducts .container .swipeImg {
   width: 400px;
   height: 400px;
@@ -490,6 +520,12 @@ footer ul li:not(:last-child) {
   background-image: url("../images/swipeInfoimg.webp");
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  -webkit-animation: swipePhoto 1s ease-in;
+          animation: swipePhoto 1s ease-in;
 }
 
 .properties .container {
@@ -539,6 +575,10 @@ footer ul li:not(:last-child) {
   background-image: url("../images/vegan-icon.png");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.container2 {
+  margin: 0 auto;
 }
 
 .container2 .carousel-container {
@@ -638,6 +678,26 @@ footer ul li:not(:last-child) {
     width: 50%;
     height: 630px;
   }
+  @-webkit-keyframes swipePhoto {
+    from {
+      -webkit-transform: translateX(150%);
+              transform: translateX(150%);
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  @keyframes swipePhoto {
+    from {
+      -webkit-transform: translateX(150%);
+              transform: translateX(150%);
+    }
+    to {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -667,6 +727,9 @@ footer ul li:not(:last-child) {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+  .container2 {
+    width: 1080px;
   }
   .container2 .carousel-container {
     width: 1080px;

@@ -41,10 +41,10 @@ header {
             display:none;
     
         }
-        & a:hover{
-            color:aqua;
+        // & a:hover{
+        //     border-bottom: 2px solid grey;
 
-        }
+        // }
 
 
     }
@@ -84,7 +84,7 @@ header {
         flex-direction: column;
         position:absolute;
         align-items:center;
-        top:6vh;
+        top:5vh;
         right:0%;
         background:$blue;
         height:70vh;
@@ -117,8 +117,13 @@ header {
         }
     }
 }
-// @media screen and (max-width:400px)  {
-//     .nav-links {
-//         top:11vh;
-//     }
-// }
+@media screen and (max-width:400px)  {
+    .nav-links {
+        top:11vh;
+    }
+}
+@media screen and (max-width:480px)  {
+    .nav-links {
+        top:11vh;
+    }
+}

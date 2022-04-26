@@ -144,10 +144,6 @@ header .logoindex {
   display: none;
 }
 
-.nav-links a:hover {
-  color: aqua;
-}
-
 .small-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +188,7 @@ header .logoindex {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    top: 6vh;
+    top: 5vh;
     right: 0%;
     background: #12343a;
     height: 70vh;
@@ -237,6 +233,18 @@ header .logoindex {
       -webkit-transform: translateX(0px);
               transform: translateX(0px);
     }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-links {
+    top: 11vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+    top: 11vh;
   }
 }
 
